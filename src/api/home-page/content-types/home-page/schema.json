@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HomeHero": {
+      "displayName": "HeroSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.hero-section"
+    },
+    "HomeIntro": {
+      "displayName": "IntroSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.intro-section"
+    },
+    "HomeProjects": {
+      "displayName": "Project",
+      "type": "component",
+      "repeatable": false,
+      "component": "card.project"
+    },
+    "HomeTeam": {
+      "displayName": "TeamSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.team-section"
+    },
+    "HomeCallToAction": {
+      "displayName": "CallToActionSection",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.call-to-action-section"
+    }
+  }
+}

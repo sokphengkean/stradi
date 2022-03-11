@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_call_to_action_sections",
+  "info": {
+    "displayName": "CallToActionSection",
+    "icon": "hand-pointer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "CallToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.button"
+    },
+    "BackgroundImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

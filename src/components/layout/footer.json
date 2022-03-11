@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "band-aid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Copyright": {
+      "type": "string"
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.button"
+    },
+    "FooterMenus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu"
+    }
+  }
+}

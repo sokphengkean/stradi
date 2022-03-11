@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_team_sections",
+  "info": {
+    "displayName": "TeamSection",
+    "icon": "list-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.section-heading",
+      "required": true
+    },
+    "TeamMember": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-member.team-member"
+    }
+  }
+}

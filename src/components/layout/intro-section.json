@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_intro_sections",
+  "info": {
+    "displayName": "IntroSection",
+    "icon": "exclamation"
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "displayName": "SectionHeading",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.section-heading"
+    },
+    "HomeIntroCard": {
+      "displayName": "IntroCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.intro-card"
+    }
+  }
+}
