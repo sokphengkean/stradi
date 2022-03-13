@@ -14,7 +14,12 @@ module.exports = createCoreController('api::home-page.home-page', ({ strapi }) =
             ...query,
             populate: {
                 HomeHero: { populate: "*" },
-                HomeIntro: { populate: "*" },
+                HomeIntro: {
+                    populate: {
+                        SectionHeading: { populate: "*" },
+                        HomeIntroCard: { populate: "*" }
+                    }
+                },
                 HomeProjects: {
                     populate: {
                         Projects: { populate: "*" },
