@@ -25,6 +25,11 @@
     "Icon": {
       "type": "string",
       "required": true
+    },
+    "IsHashRoute": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

@@ -16,6 +16,11 @@
     },
     "Link": {
       "type": "string"
+    },
+    "Menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }

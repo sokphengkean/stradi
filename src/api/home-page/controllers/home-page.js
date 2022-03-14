@@ -13,7 +13,13 @@ module.exports = createCoreController('api::home-page.home-page', ({ strapi }) =
         const entity = await strapi.entityService.findMany('api::home-page.home-page', {
             ...query,
             populate: {
-                HomeHero: { populate: "*" },
+                HomeHero: {
+                    populate: {
+                        BackgroundImage: { populate: "*" },
+                        HeroImage: { populate: "*" },
+                        CallToAction: { populate: "*" },
+                    }
+                },
                 HomeIntro: {
                     populate: {
                         SectionHeading: { populate: "*" },
@@ -33,7 +39,12 @@ module.exports = createCoreController('api::home-page.home-page', ({ strapi }) =
                         TeamMember: { populate: "*" }
                     }
                 },
-                HomeCallToAction: { populate: "*" },
+                HomeCallToAction: {
+                    populate: {
+                        CallToAction: { populate: "*" },
+                        BackgroundImage: { populate: "*" }
+                    }
+                },
             }
         });
 
