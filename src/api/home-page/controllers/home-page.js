@@ -22,10 +22,17 @@ module.exports = createCoreController('api::home-page.home-page', ({ strapi }) =
                 },
                 HomeProjects: {
                     populate: {
+                        SectionHeading: { populate: "*" },
+                        BackgroundImage: { populate: "*" },
                         Projects: { populate: "*" },
                     }
                 },
-                HomeTeam: { populate: "*" },
+                HomeTeam: {
+                    populate: {
+                        SectionHeading: { populate: "*" },
+                        TeamMember: { populate: "*" }
+                    }
+                },
                 HomeCallToAction: { populate: "*" },
             }
         });
